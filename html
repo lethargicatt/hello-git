@@ -87,3 +87,29 @@ HTML 链接 - target 属性
 使用 target 属性，你可以定义被链接的文档在何处显示。
 实例
 <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer">访问菜鸟教程!</a>
+
+邮件发送
+<a href="mailto:zhangrr601@163.com?subject=这是邮件的主题&body=这是邮件的内容" rel="nofollow">发送邮件</a>
+
+抄送：
+
+英文名称：Carbon Copy，又简称为 CC。在网络术语中，抄送就是将邮件同时发送给收信人以外的人，用户所写的邮件抄送一份给别人，对方可以看见该用户的 E-mail。同收件人地址栏一样，不可以超过 1024 个字符。一般来说，使用"抄送"服务时，多人抄送的电子邮件地址使用 ; 分隔。
+
+密件抄送：
+
+英文名称：Blind Carbon Copy ，又称“盲抄送”，和抄送的唯一区别就是它能够让各个收件人无法查看到这封邮件同时还发送给了哪些人。密件抄送是个很实用的功能，假如一次向成百上千位收件人发送邮件，最好采用密件抄送方式，这样一来可以保护各个收件人的地址不被其他人轻易获得，二来可以使收件人节省下收取大量抄送的 E-mail 地址的时间。
+
+参数	                    描述
+mailto:name@email.com	    邮件接收地址
+cc=name@email.com	        抄送地址
+bcc=name@email.com	      密件抄送地址
+subject=subject text	    邮件主题
+body=body text	          邮件内容
+?	                        第一个参数分隔符
+&	                        其他参数分隔符
+
+<a href="http://www.runoob.com/" target="_blank" rel="noopener noreferrer">访问菜鸟教程!</a> 
+后面最好加上：
+
+rel="noopener noreferrer"
+意思是不会打开其他的网站，因为恶意病毒可能会修改你的浏览器空白页地址。
