@@ -151,3 +151,43 @@ META 元素通常用于指定网页的描述，关键词，文件的最后修改
 
 HTML <script> 元素
 <script>标签用于加载脚本文件，如： JavaScript。
+
+<h4>嵌套列表：</h4>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+  
+</ul><h4>一个自定义列表：</h4>
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+iframe可以显示一个目标链接的页面
+
+目标链接的属性必须使用iframe的属性，如下实例:
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="http://www.runoob.com" target="iframe_a">RUNOOB.COM</a></p>
+
+RGBA 的意思是（Red-Green-Blue-Alpha）它是在 RGB 上扩展包括了 “alpha” 通道，运行对颜色值设置透明度。
+
+div {
+
+background:rgba(255,0,0,0.5);
+
+}
+相对于使用 rgb(255,255,0)，使用 rgba(255,255,0,0.5) 可以实现设置颜色透明度的功能，这里的 0.5 表示透明度，范围 0~1，0 表示全透明。
+
+通常我们为了省略一个 0:
+
+div {
+    background:rgba(255,0,0,.5);
+}
